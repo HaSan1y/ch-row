@@ -1,0 +1,102 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.2;
+    text-align: left;
+    overflow: hidden;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    outline: 1px solid black;
+    padding: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 40px;
+}
+
+section:nth-child(1) {
+    background-color: #E28525;
+}
+
+section:nth-child(2) {
+    background-color: #016972;
+}
+
+section:nth-child(3) {
+    background-color: #00403F;
+}
+
+section:nth-child(1) button {
+    color: #E28525;
+    padding: 10px 20px;
+}
+
+section:nth-child(2) button {
+    color: #016972;
+    padding: 10px 20px;
+}
+
+section:nth-child(3) button {
+    color: #00403F;
+    padding: 10px 20px;
+}
+
+button {
+    margin: 100px 0 0 0;
+    border-radius: 50px;
+    transition: 0.1s;
+    background-color: white;
+    text-align: center;
+    align-content: end;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white !important;
+    background-color: transparent;
+}
+
+footer,
+footer a {
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+
+    main {
+        grid-template-columns: 1fr;
+
+        padding: 30px;
+    }
+
+    section {
+        padding: 30px;font-size: 0.8rem;height: 260px;
+    }
+
+    button {
+        margin: 10px 0 0 0;
+    }
+}
